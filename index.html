@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css" charset="utf-8">
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <section class="hero is-primary is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Random Quotes Here
+          </h1>
+          <h3 class="subtitle">
+            Yet another pointless app.
+          </h3>
+          <button type="button" class="button is-white is-outlined new-quote">Gimme a Quote</button><br>
+        </div>
+      </div>
+    </section>
+    <section id="quote-container" class="hero is-light is-bold is-fullheight" style="display: none;">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Loader -->
+          <div class="loader"></div>
+          <!-- Output -->
+          <h2 id="text" class="title"></h2>
+          <h4 id="author" class="subtitle"></h4>
+          <button type="button" id="another-button" class="button is-primary is-outlined new-quote" style="display: none;"">Another!</button>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/script.js" charset="utf-8"></script>
+  </body>
+</html>
