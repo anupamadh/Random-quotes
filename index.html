@@ -3,39 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Random Quotes</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.min.css" media="screen" title="bulma framework" charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css" media="screen" title="main styles" charset="utf-8">
     <script src="https://use.fontawesome.com/bf8cb3f9af.js"></script>
     <script src="https://use.typekit.net/spi3oeb.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+    <div class="columns">
+      <div class="column has-text-centered">
         <h1>Random Quotes Here</h1>
         <h3>Yet another pointless app.</h3>
-        <button type="button" class="textProcess btn btn-success btn-lg" data-toggle="modal" data-target="#outputModal">Gimme a Quote</button><br>
-        <!-- Modal -->
-        <div class="modal fade" id="outputModal" tabindex="-1" role="dialog" aria-labelledby="outputModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="outputModalLabel">Quote this:</h4>
-              </div>
-              <div class="modal-body">
-                <h2 id="output"></h2>
-                <div class="loader" title="0">
-                  <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-                  <span class="sr-only">Loading...</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <button type="button" class="textProcess is-primary is-outlined">Gimme a Quote</button><br>
+
+        <!-- Loader -->
+        <div class="loader" title="0">
+          <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="">
+          <h2 id="output"></h2>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>
